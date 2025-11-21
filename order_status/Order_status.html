@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Bite or Die</title>
+      <link rel="stylesheet" href="Order_status.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/492f8e6c69.js" crossorigin="anonymous"></script>
+      
+    </head>
+
+    <body>
+
+      <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo">SweetMotion</div>
+
+      <!-- Icon for navbar -->
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+
+      <!-- LINKS -->
+      <ul id="navLinks">
+        <li><a class="Align" href="../Front_page/Front_page.html">Home</a></li>
+        <li><a class="Align" href="/Front_page/Front_page.html#aboutfood">Menu</a></li>
+        <li><a class="Align" href="../order_status/Order_status.html">Order</a></li>
+        <li><a class="Align" href="../Account/Account.html">Account</a></li>    
+        <li><a class="Align" href="../Cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><button class="Login"  type="button" onclick="confirmLogout()">Log out</button></li>
+      </ul>
+    </div>
+  </nav>
+
+      <h1 class="Orders">Orders</h1>
+
+      <hr>
+
+      <div id="order-container" class="background-border">
+
+      <div class="order-container">
+        <img class="Product-pic" src="/Sweet-motion/HTML/Gemini_Generated_Image_1o75f51o75f51o75 1.png">
+
+        <ul class="text-orders">
+
+          <li>Product: Croissant</li>
+
+          <br>
+
+          <li>Quantity: 1</li>
+
+          <br>
+
+          <li>Total: $50</li>
+
+          <br>
+
+          <li>Address:</li>
+
+          <br>
+            
+          <li>Status: Pending</li>
+          
+        </ul>
+      </div>
+
+      <button class="cancel-btn" onclick="openCancelPopup()">Cancel Order</button>
+
+      </div>
+
+  <!-- POPUP -->
+  <div id="cancelPopup" class="popup">
+      <div class="popup-content">
+          <h3>Are you sure?</h3>
+          <p>Do you want to cancel this order?</p>
+          <div class="btn-group">
+            <button class="yes" onclick="confirmCancel()">Yes</button>
+            <button class="no" onclick="closeCancelPopup()">No</button>
+         </div>
+    </div>
+</div>
+
+
+      <script src="Order_status.js" ></script>
+    </body>
+
+</html>

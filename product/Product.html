@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/492f8e6c69.js" crossorigin="anonymous"></script>
+    <title>SweetMotion</title>
+    <link rel="stylesheet" href="Product.css">
+</head>
+<body>
+    
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo">SweetMotion</div>
+
+      <!-- Icon for navbar -->
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+      <!-- LINKS -->
+      <ul id="navLinks">
+        <li><a class="Align" href="../Front_page/Front_page.html">Home</a></li>
+        <li><a class="Align" href="../Front_page/Front_page.html#aboutfood">Menu</a></li>
+        <li><a class="Align" href="../order_status/Order_status.html">Order</a></li>
+        <li><a class="Align" href="../Account/Account.html">Account</a></li> 
+        <li><a class="Align" href="../Cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><button class="Login" type="button" onclick="confirmLogout()">Log out</button></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="fnd">
+    <Span>Food & Drinks</Span>
+    <div class="line"></div>
+  </div>
+
+  
+<div class="product-container">
+
+    <div class="image-box">
+        <img src="ChatGPT Image Nov 2, 2025, 09_44_24 PM.png" alt="Croissant">
+    </div>
+
+    <div class="info-box">
+        <h1 class="title">Croissant</h1>
+        <p class="price">₱50</p>
+
+        <div class="quantity">
+            <span class="minus" id="minus">-</span>
+            <span class="number" id="num">1</span>
+            <span class="add" id="add">+</span>
+        </div>
+
+        <p class="description"></p>
+
+        <button class="add-btn">Add To Cart</button>
+    </div>
+
+</div>
+
+
+    <script src="product.js"></script>
+</body>
+
+
+</html>

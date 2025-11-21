@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+  <title>Sweet Motion </title>
+
+  <link rel="stylesheet" href="Front_page.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/492f8e6c69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo">SweetMotion</div>
+
+      <!-- Icon for navbar -->
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+
+      <!-- LINKS -->
+      <ul id="navLinks">
+        <li><a class="Align" href="#">Home</a></li>
+        <li><a class="Align" href="#aboutfood">Menu</a></li>
+        <li><a class="Align" href="../order_status/Order_status.html">Order</a></li>
+        <li><a class="Align" href="../Account/Account.html">Account</a></li>    
+        <li><a class="Align" href="../Cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><button class="Login" onclick="confirmLogout()">Log out</button></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="background">
+    <div class="StrtTxt">
+      <h1>Bite or <br> Die  
+        <span class="Motto">Crave it. Taste it. Love it.</span>
+      </h1>
+      <button class="ShopBtn"> <a href="#aboutfood">Shop Now</a></button>
+      </div>
+    </div>
+
+
+      <!-- FOOD -->
+  <section class="aboutfood" id="aboutfood" >
+    <div class="food">FOODS & DRINKS</div>
+
+    <div class="food-grid">
+<div class="cardcontent" onclick="openProduct('Croissant', 50, '../Front_page/ChatGPT Image Nov 3, 2025, 05_26_44 PM.png',
+'A buttery, flaky French pastry perfect for breakfast or a snack.')">
+
+    <div class="cardcontentimg">
+        <img src="ChatGPT Image Nov 3, 2025, 05_26_44 PM.png" alt="Croissant">
+    </div>
+
+    <div class="card1">
+        <h3>Croissant</h3>
+        <p>₱50</p>
+        <p class="description" style="display: none;">
+            A buttery, flaky French pastry perfect for breakfast or a snack.
+        </p>
+    </div>
+</div>
+
+
+<!-- Éclair -->
+<div class="cardcontent" onclick="openProduct('Éclair', 60, '../Front_page/ChatGPT Image Nov 3, 2025, 06_42_28 PM.png',
+'A light pastry filled with cream and topped with rich chocolate icing.')">
+
+    <div class="cardcontentimg">
+        <img src="ChatGPT Image Nov 3, 2025, 06_42_28 PM.png" alt="Éclair">
+    </div>
+
+    <div class="card1">
+        <h3>Éclair</h3>
+        <p>₱60</p>
+        <p class="description" style="display: none;">
+            A light pastry filled with cream and topped with rich chocolate icing.
+        </p>
+    </div>
+</div>
+
+
+<!-- Apple Turnover -->
+<div class="cardcontent" onclick="openProduct('Apple Turnover', 55, '/Front_page/Gemini_Generated_Image_723fk9723fk9723f 1.png',
+'A warm, flaky pastry packed with sweet apple filling.')">
+
+    <div class="cardcontentimg">
+        <img src="Gemini_Generated_Image_723fk9723fk9723f 1.png" alt="Apple Turnover">
+    </div>
+
+    <div class="card1">
+        <h3>Apple Turnover</h3>
+        <p>₱55</p>
+        <p class="description" style="display: none;">
+            A warm, flaky pastry packed with sweet apple filling.
+        </p>
+    </div>
+</div>
+
+
+<!-- Cinnamon Roll -->
+<div class="cardcontent" onclick="openProduct('Cinnamon Roll', 65, '/Front_page/Gemini_Generated_Image_j6mzpoj6mzpoj6mz 1.png',
+'A soft, sweet roll swirled with cinnamon and topped with icing.')">
+
+    <div class="cardcontentimg">
+        <img src="Gemini_Generated_Image_j6mzpoj6mzpoj6mz 1.png" alt="Cinnamon Roll">
+    </div>
+
+    <div class="card1">
+        <h3>Cinnamon Roll</h3>
+        <p>₱65</p>
+        <p class="description" style="display: none;">
+            A soft, sweet roll swirled with cinnamon and topped with icing.
+        </p>
+    </div>
+</div>
+
+
+<!-- Cream Puff -->
+<div class="cardcontent" onclick="openProduct('Cream Puff', 70, '/Front_page/Gemini_Generated_Image_4sjyec4sjyec4sjy 1.png',
+'A delicate pastry filled with smooth and creamy custard.')">
+
+    <div class="cardcontentimg">
+        <img src="Gemini_Generated_Image_4sjyec4sjyec4sjy 1.png" alt="Cream Puff">
+    </div>
+
+    <div class="card1">
+        <h3>Cream Puff</h3>
+        <p>₱70</p>
+        <p class="description" style="display: none;">
+            A delicate pastry filled with smooth and creamy custard.
+        </p>
+    </div>
+</div>
+
+
+<!-- Strudel -->
+<div class="cardcontent" onclick="openProduct('Strudel', 80, '/Front_page/Gemini_Generated_Image_2pivfq2pivfq2piv.png',
+'A layered pastry with sweet fruit filling and a crispy crust.')">
+
+    <div class="cardcontentimg">
+        <img src="Gemini_Generated_Image_2pivfq2pivfq2piv.png" alt="Strudel">
+    </div>
+
+    <div class="card1">
+        <h3>Strudel</h3>
+        <p>₱80</p>
+        <p class="description" style="display: none;">
+            A layered pastry with sweet fruit filling and a crispy crust.
+        </p>
+    </div>
+</div>
+
+  
+    <!-- Hidden cards (initially not shown) -->
+  <div class="extra-food hidden" id="extraFood">
+    <div class="cardcontent" onclick="openProduct('Muffin', 75, 'img7.png', '')">
+    <div class="cardcontentimg">
+      <img src="img7.png" alt="Muffin" width="350" height="250">
+    </div>
+    <div class="card1">
+      <h3>Muffin</h3>
+      <p>₱75</p>
+      <p class="description" style="display: none;"></p>
+    </div>
+  </div>
+
+  <div class="cardcontent" onclick="openProduct('Donut', 65, 'img8.png', '')">
+    <div class="cardcontentimg">
+      <img src="img8.png" alt="Donut" width="350" height="250">
+    </div>
+    <div class="card1">
+      <h3>Donut</h3>
+      <p>₱65</p>
+      <p class="description" style="display: none;"></p>
+    </div>
+  </div>
+
+  <div class="cardcontent" onclick="openProduct('Pie', 90, 'img9.png', '')">
+    <div class="cardcontentimg">
+      <img src="img9.png" alt="Pie" width="350" height="250">
+    </div>
+    <div class="card1">
+      <h3>Pie</h3>
+      <p>₱90</p>
+      <p class="description" style="display: none;"></p>
+    </div>
+  </div>
+
+  <div class="cardcontent" onclick="openProduct('Brownie', 85, 'img10.png', '')">
+    <div class="cardcontentimg">
+      <img src="img10.png" alt="Brownie" width="350" height="250">
+    </div>
+    <div class="card1">
+      <h3>Brownie</h3>
+      <p>₱85</p>
+      <p class="description" style="display: none;"></p>
+    </div>
+  </div>
+
+  <div class="cardcontent" onclick="openProduct('Macaron', 95, 'img11.png', '')">
+    <div class="cardcontentimg">
+      <img src="img11.png" alt="Macaron" width="350" height="250">
+    </div>
+    <div class="card1">
+      <h3>Macaron</h3>
+      <p>₱95</p>
+      <p class="description" style="display: none;"></p>
+    </div>
+  </div>
+
+  <div class="cardcontent" onclick="openProduct('Cupcake', 70, 'img12.png', '')">
+    <div class="cardcontentimg">
+      <img src="img12.png" alt="Cupcake" width="350" height="250">
+    </div>
+    <div class="card1">
+      <h3>Cupcake</h3>
+      <p>₱70</p>
+      <p class="description" style="display: none;"></p>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+ 
+</section>
+  <!-- ABOUT US --> 
+  <section class="aboutus">
+      <div class="aboutustxt">About us</div>
+      <div class="line"></div>
+      <div class="clm">
+          <div class="text">Sweet Motion</div>
+         <div class="sweetxt">Try our best pastries here in Sweet Motion</div>
+      </div>
+      <div class="descrption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        Praesent eget tincidunt erat. Nullam commodo lectus nec<br> odio interdum, id sagittis mauris posuere.  Proin fermentum<br>
+         luctus leo, sit amet vulputate tortor interdum non. Phasellus<br> dignissim odio nec lorem convallis, sit amet pulvinar nulla<br> 
+         tincidunt. Fusce malesuada, lorem in accumsan pretium,<br> justo massa malesuada metus, sit amet convallis odio felis <br>
+         in augue. Integer dictum, ligula at facilisis maximus,<br> nibh sapien hendrerit lacus, id gravida metus erat in velit.<br>
+      Suspendisse ultricesh, neque ac facilisis placerat, purus massa<br> porttitor libero,
+      sit amet dictum lorem odio vel ante. Integer a leo et<br> justo cursus eleifend. Donec eget arcu ut enim dapibus eleifend<br>. Sed ac sapien ac elit ornare bibendum. Duis finibus </div>
+  </section>
+
+  <footer class="ftr">
+            . <div class="footer-left">
+                    <img src="ChatGPT Image Oct 31, 2025, 07_10_00 PM.png" alt="Sweet Motion Logo">
+                    <div class="footer-title">Sweet Motion</div>
+              </div>
+                  <div class="footer-right">
+                    <div>(09) 5069-9899</div>
+                    <div>Cavite: 4106, Rosario, Gen Trias Drive, STI Bldg</div>
+                  </div>
+  </footer>
+  
+
+
+
+  <script src="Front_page.js"></script>
+
+</body>
+</html>
